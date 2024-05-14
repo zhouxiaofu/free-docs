@@ -393,7 +393,7 @@ sudo firewall-cmd --reload
 
 # master参与调度
 
-kubernetes master节点一般不参与部署pod，但是有的时候只有一台主机，后续可能再增加，则需要将master节点设为调度节点，[参考资料](https://www.jianshu.com/p/ecdf843b120c)
+kubernetes master节点一般不参与部署pod，但是有的时候只有一台主机，后续可能再增加，则需要将master节点设为调度节点，[参考资料](https://www.jianshu.com/p/ecdf843b120c)，注意：需要等到节点的状态为 Ready
 
 ```shell
 # 查看node
