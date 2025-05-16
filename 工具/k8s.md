@@ -1203,6 +1203,12 @@ vim /var/lib/kubelet/kubeadm-flags.env
 # 重启 kubelet
 systemctl daemon-reload
 systemctl restart kubelet
+
+# 查看ssl证书创建和过期时间
+openssl x509 -in /etc/kubernetes/pki/apiserver.crt -noout -dates
+
+# 更新ssl证书
+sudo kubeadm certs renew all
 ```
 
 
