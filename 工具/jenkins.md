@@ -125,8 +125,7 @@ Jenkins 核心和插件的简体中文本地化。
 
 ### SSH(必需)
 
-SSH远程执行脚本
-改为使用`Publish Over SSH`
+SSH远程执行脚本，改为使用`Publish Over SSH`
 
 ### NodeJS Plugin(必需)
 
